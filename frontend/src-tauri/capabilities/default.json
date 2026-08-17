@@ -1,0 +1,10 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Phase 0 baseline: the frontend may open the main window and invoke the app's own commands. No arbitrary filesystem, shell, or HTTP access is granted — all sensitive operations go through typed Rust commands (IMPLEMENTATION_PLAN §19.4).",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "core:event:default"
+  ]
+}

@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+backend/.venv/
+backend/build_app/
+backend/dist_app/
+*.egg-info/
+
+# Model / inference vendor artifacts — too large for git (GitHub hard-blocks
+# files over 100MB; the GGUF is 644MB). llama-macos/ (~17MB) is small and kept.
+backend/vendor/models/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/tsconfig.tsbuildinfo
+
+# Tauri (unused experiment dir)
+frontend/src-tauri/target/
+frontend/src-tauri/gen/
+
+# App data / logs
+*.log
+.claude/
